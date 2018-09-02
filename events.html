@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parents networking</title>
+<meta charset="UTF-8">	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="setting.css">
+
+
+
+</head>
+<body>
+  <script>
+  function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+} 
+  
+  </script>
+<header>
+
+
+  <div class="topnav sticky " id="myTopnav">
+        <p  style="float:left; padding-right:10px; padding-top:15px; color:white; ">SchoolShare</p>
+        <a href="index.html">Home</a>
+        <a href="setting.html" >Setting</a>
+        <a href="events.html"class="active" >Events</a>
+        <a href="shareRide.html">ShareRide</a>
+        <a href="map.html">Map</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+
+</header>
+
+
+
+  <div id="show">
+    <div class="container">
+      <div class="sbox1">
+        <h2>Events</h2>
+        <p><b>Here you can see what big events are happening near you, events such as fundraisers or having the kids socialize by doing fun activities, this is so that the students get to be comfortable around eachother and get to know eachother better</b> </p>
+        
+    </div>
+   </div>
+   <hr >
+</div>
+
+
+
+<section id="boxes">
+  <div class="container-fluid hero-unit ">
+    
+    <div class="row">
+      <div class="col-sm-2" >
+        <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">Home</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Set Event</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Weekends </button>
+        
+  
+       </div>
+     </div>
+      <div class="col-sm-10">
+        <div id="London" class="tabcontent">
+            <div class="container2">
+              <p>
+                  </br>
+              </p> 
+          </div>
+        </div>
+        
+        <div id="Paris" class="tabcontent">
+            <div class="container2">  
+                
+           </div>
+        </div>
+        
+        <div id="Tokyo" class="tabcontent">
+            <div class="container2">  
+               
+           </div>
+        </div>
+       
+    </div>
+  </div>
+</section>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav sticky") {
+        x.className += " responsive";
+        document.getElementById("body").style.paddingTop = "0px";
+    } else {
+        x.className = "topnav sticky";
+    }
+}
+</script>
+
+<footer>CopyRight</footer>
+</body>
+</html>
